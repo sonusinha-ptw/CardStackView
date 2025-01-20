@@ -358,7 +358,9 @@ public class CardStackLayoutManager
 
     private void updateTranslation(View view) {
         view.setTranslationX(state.dx);
-        view.setTranslationY(state.dy);
+        // view.setTranslationY(state.dy);
+        // added for swipe straight left or straight right.
+        view.setTranslationY(0f);
     }
 
     private void updateTranslation(View view, int index) {
